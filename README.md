@@ -4,15 +4,14 @@
 
 **step1**:load jquery<br/>
 **step2**:load this script<br/>
-**step3**:inside your script, call the validate function <br> 
+**step3**:inside your script, call the validate function <br>
 ```javascript
 validate($("#exampleform"), "", false, "saveFunction");
 ```
-<br/>
-**step4**:add validations as attributes to each inputs <br>
+**step4** :add validations as attributes to each inputs <br>
 eg:<input type="text" name="email" data-validation="required,email" data-validation-error-msg-required="Email cannot be empty" data-validation-error-msg-email="Invalid Email"><br>
-
 This will prevent the page from submiting until user inputed a valid email address.<br>
+once the form is valid the script will release the hold and the control will be passed to the function you provided as an argument to validate.in this case the script will call 'saveFunction' once the form is valid <br>
 you can provide your own validation rules too.<br>
 eg:<input type="text" name="name" data-validation="required,is_joby" data-validation-error-msg-required="name cannot be empty" data-validation-error-msg-is_joby="Invalid"><br>
 now inside your script you can write a function like below<br>
