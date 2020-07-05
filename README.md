@@ -1,13 +1,15 @@
 # jquery_data_validate
 
-step1:load jquery<br/>
-step2:load this script<br/>
-step4:inside your script, call the validate function <br> 
+###How to use
+
+*step1:load jquery<br/>
+*step2:load this script<br/>
+*step4:inside your script, call the validate function <br> 
 ```javascript
 validate($("#exampleform"), "", false, "saveFunction");
 ```
 <br/>
-step5:add validations as attributes to each inputs <br>
+*step5:add validations as attributes to each inputs <br>
 eg:<input type="text" name="email" data-validation="required,email" data-validation-error-msg-required="Email cannot be empty" data-validation-error-msg-email="Invalid Email"><br>
 
 this will prevent the page from submiting until user inputed a valid email address.<br>
